@@ -5,14 +5,14 @@
 :sectnums:
 :source-highlighter: rouge
 :icons: font
-:imagesdir: ./images
+:imagesdir: "https://github.com/cloudera/PSEAutomation/blob/main/Participant_amps/img"
 :hide-uri-scheme:
 :homepage: https://github.com/cloudera/cloudera-partners
 
 == Enable Model Access
 Go to Amazon Bedrock in the region your environment is deployed. See what models are available. Check out the Cross-region Inference tab to see if your org already has access to some models. If you need to, go request access to a model.
 
-image::../../img/bedrock-models.png[width=600]
+image::bedrock-models.png[width=600]
 
 Note: `Copy the *Inference profile ID* for the model you want to use. We'll need this to setup environment variables in Cloudera AI Workbench later.`
 
@@ -71,7 +71,7 @@ Note: `Copy the *Inference profile ID* for the model you want to use. We'll need
 
 . From the UI, make sure to obtain an Access Key and Secret Key.
 +
-image::../../img/iam-role.png[width=600]
+image::iam-role.png[width=600]
 +
 Note: `There are approaches where you can instead attach a role to your Liftie cluster. That is out of scope for this document.`
 

@@ -6,7 +6,7 @@ v0.1, 2025-04-10: Draft
 :sectnums:
 :source-highlighter: rouge
 :icons: font
-:imagesdir: ./images
+:imagesdir: "https://github.com/cloudera/PSEAutomation/blob/main/Participant_amps/img"
 :hide-uri-scheme:
 :homepage: https://github.com/cloudera/cloudera-partners.git
 
@@ -21,7 +21,7 @@ v0.1, 2025-04-10: Draft
 * Give it a name -> Click `Create key` 
 * Crucially, save your API key securely; it's shown only once.
 
-image::../../img/pinecone-api-key.png[pinecone_api_key.png, width=600, align="center"]
+image::pinecone-api-key.png[pinecone_api_key.png, width=600, align="center"]
 
 == Set Pinecone Env Variables in Cloudera AI
 
@@ -54,7 +54,7 @@ image::../../../assets/EnvVariables1.png[EnvVariables1.png, width=600, align="ce
 
 . Click on `Create Project` to create a new project.
 +
-image::../../img/New_project.png[New_project.png, width=600, align="center"]
+image::New_project.png[New_project.png, width=600, align="center"]
 
 . Enter the following details in the New Project Page
 +
@@ -68,7 +68,7 @@ image::../../img/New_project.png[New_project.png, width=600, align="center"]
 |*Enter Branch Name(Optional)* |feature/ai-agents-hol-cai
 |===
 
-image::../../img/CreateProject.png[CreateProject.png, width=600, align="center"]
+image::CreateProject.png[CreateProject.png, width=600, align="center"]
 
 == Launch a new session for `prerequisites`
 To create a new session you can go into your project and click on `New Session`
@@ -85,13 +85,13 @@ To create a new session you can go into your project and click on `New Session`
 +
 Click on *[.underline]#START SESSION#*
 +
-image::../../img/New_session_prerequisites.png[New_session_prerequisites.png.png, width=600, align="center"]
+image::New_session_prerequisites.png[New_session_prerequisites.png.png, width=600, align="center"]
 
 . Run the `download_req.py` script.
 +
 Click `0_install_prerequisites` folder -> then `download_req.py` -> Select `All content` and hit the `play` button to run the script.
 +
-image::../../img/Prereqs.png[Prereqs.png, width=600, align="center"]
+image::Prereqs.png[Prereqs.png, width=600, align="center"]
 
 == Launch a new session for `embedding creation` on Vector Db
 . Start a “*NEW SESSION*” and use the below configuration.
@@ -105,12 +105,12 @@ image::../../img/Prereqs.png[Prereqs.png, width=600, align="center"]
 |===
 Click on *[.underline]#START SESSION#*
 +
-image::../../img/embedding_creation.png[embedding_creation.png, width=600, align="center"]
+image::embedding_creation.png[embedding_creation.png, width=600, align="center"]
 
 . Run the `create_pinecone_embed.py` script.
 +
 Click `2_query_vector_db` folder -> then `create_pinecone_embed.py` -> Select `All content` and hit the `play` button to run the script.
 +
-image::../../img/Create_embeddings.png[Create_embeddings.png, width=600, align="center"]
+image::Create_embeddings.png[Create_embeddings.png, width=600, align="center"]
 
 Note: `This script will create the embeddings for the policy documents and store them in the Pinecone Vector Database.`

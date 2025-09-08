@@ -1,4 +1,5 @@
 # Setup Guide for the AI Agents with Partners HOL
+baseurl: "https://github.com/cloudera/PSEAutomation/blob/main/Participant_amps/img"
 
 ### Key Links:
 - [GitHub Repo](https://github.com/cloudera/cloudera-partners/tree/feature/ai-agents-hol-cai)
@@ -65,7 +66,7 @@ You can follow the instructions [here](https://community.cloudera.com/t5/Communi
     - Note: The quantity of credits is generally sufficient for 10 workshops, assuming around 100 users per workshop
 - Enter the API Key as an environment variable in Cloudera AI
 
-![Serper Key](./img/serper-key.png)
+![Serper Key]({{ site.baseurl }}/serper-key.png)
 
 ## Successful Lab Tips
 

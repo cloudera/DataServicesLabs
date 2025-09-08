@@ -1,11 +1,11 @@
 = RAG-based AI Agents with Cloudera AI
+
 :description: Hands On Lab Setup Instructions for AI Agents with Cloudera AI
 :toc: left
 :toclevels: 2
 :sectnums:
 :source-highlighter: rouge
 :icons: font
-:imagesdir: ./images
 :hide-uri-scheme:
 :homepage: https://github.com/cloudera/cloudera-partners
 
@@ -37,7 +37,7 @@ Because the applications of LLMs can be quite broad across industries, we will h
 === Manual Setup
 
 * Setup Cloudera on Cloud Environment with Cloudera AI(CML) data service
-Follow this link:https://github.com/cloudera/cloudera-partners/tree/eb3702ea951f75ccf0866f8ee6d9d478d1306eb7/ClouderaSetup/OnCloud/AWS[Guide] to deploy a Cloudera on Cloud environment with Cloudera AI(CML) data service.
+Follow this link:https://github.com/cloudera/ClouderaSetup/tree/main/OnCloud/AWS[Guide] to deploy a Cloudera on Cloud environment with Cloudera AI(CML) data service.
 
 * Create Cloudera AI Registry
 Follow this link:https://docs.cloudera.com/machine-learning/cloud/setup-model-registry/topics/ml-creating-model-registry-cdp.html[official documentation] to manually crate `AI Registry` in the `environment`. 
@@ -50,7 +50,7 @@ Here's a link:https://cloudera.atlassian.net/wiki/spaces/SE/pages/10920394909/Ho
 === Automated Setup (Recommended)
 To automate the setup of the required infrastructure for this lab, we recommend using the automation framework provided. 
 
-Follow this link:https://github.com/cloudera/cloudera-partners/blob/main/ClouderaSetup/OnCloud/AWS/README.adoc[Guide] to autmatically deploy the required infrastructure for this lab. The automation framework will deploy the `Cloudera on Cloud environment`, initialize `Compute Cluster`, Create new `Compute Cluster`, Deploy the `AI workbench` and `AI Registry` and at last deploy the `Cloudera AI Inference Service (CAII)`.
+Follow this link:https://github.com/cloudera/ClouderaSetup/tree/main/OnCloud/AWS/README.adoc[Guide] to autmatically deploy the required infrastructure for this lab. The automation framework will deploy the `Cloudera on Cloud environment`, initialize `Compute Cluster`, Create new `Compute Cluster`, Deploy the `AI workbench` and `AI Registry` and at last deploy the `Cloudera AI Inference Service (CAII)`.
 
 Here is the sample configuration file that can be generated as per `step 2` of the instruction Guide link:./assets/configfile.caii[configfile.caii] to deploy the CAII service with other dependencies for this lab.
 

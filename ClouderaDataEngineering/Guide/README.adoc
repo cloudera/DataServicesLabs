@@ -152,7 +152,7 @@ There are two ways in which you can access the scripts/resources.
 ____
 Download the zip file from the GitHub repository.
 
-https://github.com/cloudera/cloudera-partners[[.underline]#https://github.com/cloudera/cloudera-partners#]
+https://github.com/cloudera/DataServicesLabs[[.underline]#https://github.com/cloudera/DataServicesLabs#]
 
 image:media/media/DownloadZip.png[media/media/DownloadZip,width=500,height=250]
 

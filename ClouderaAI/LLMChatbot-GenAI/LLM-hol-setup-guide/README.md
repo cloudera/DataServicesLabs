@@ -168,9 +168,9 @@ This step requires a download of a Chrome plugin to be able to automate the task
 Download the right version for your machine from here: https://googlechromelabs.github.io/chrome-for-testing/. Time to time the specific driver needs to be updated, as you update your browser. 
 
 A Mac may prevent you from running the executable chromedriver, so you'll need to add it in your Privacy & Security settings to trusted apps. 
-
+* Clone this repo `git clone https://github.com/cloudera/PSEAutomation.git[https://github.com/cloudera/PSEAutomation.git]`
+* Navigate to amplifier folder ```cd Participant_amps/amplifier```
 Next, perform the following the steps to set everything up and run a simple test:
-* Navigate to amplifier folder ```cd LLM-hol-setup-guide/amplifier```
 * Place **chromedriver** executable you've downloaded into this directory
 * Create and activate a virtualenvironment ```python3 -m venv .; source ./bin/activate```
 * Install selenium package ```pip3 install selenium``` and install pandas ```pip3 install pandas```
@@ -180,14 +180,14 @@ Next, perform the following the steps to set everything up and run a simple test
 
 #### 5.2 Run Bulk AMP creation
 In this step you will run an automation script that launches an AMP for each paricipant. First, a few configuration steps:
-1. Make sure all of the participant credentials are listed properly in ```./amplifier/participants.csv```
-2. Open up ```./amplifier/amplifier.py``` and edit three global variables at the top:
+1. Make sure all of the participant credentials are listed properly in ```participants.csv```
+2. Open up ```amplifier.py``` and edit three global variables at the top:
     * **SSO_URL** - set it to the URL you use to get to the SSO interface of your CDP tenant (e.g. sandbox or marketing tenant). The file currently has a sample from a previous workspace for reference.
     * **ML_WORKSPACE** - set it to the name of your ML workspace
     * **AMP_NAME** - set it to the name of the AMP that you've given the lab after uploading the catalog to the workbench (i.e. **"Hands on Lab Workshop with LLM"**)
 3. Save the ```.py``` file
 4. Get yourself a coffee, the next step will take a while. For every 5 AMPs expect to wait about half an hour. For a 50 person workshop, the AMP creation will take approximately 2.5 hours. 
-5. While in the ```./amplifier``` directory, in the command line execute ```python3 amplifier.py```.
+5. While in the ```amplifier``` directory, in the command line execute ```python3 amplifier.py```.
 
 Check the logs (stdout) periodically to make sure things are progressing. You may need to baby sit this automation since any latency in loading the Cloudera AI website may break the automation. In that case, make sure to verify which users' AMPs were successful and do not re-create them. Remove the users from the CSV file.
 

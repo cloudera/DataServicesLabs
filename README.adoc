@@ -1,0 +1,75 @@
+= End-to-End Labs
+:toc:
+:toclevels: 3
+:icons: font
+:sectnums:
+
+== Overview
+The `DataServicesLabs` folder provides **comprehensive, real-world examples** of how to integrate multiple *Cloudera Data Services* into unified workflows.  
+
+These labs are designed to simulate realistic enterprise scenarios, showcasing the end-to-end journey of data:
+- **Ingestion**
+- **Transformation**
+- **Analysis**
+- **Visualization**
+
+The goal is to help practitioners understand not only individual service usage, but also how these services **interoperate seamlessly** in production-like pipelines.
+
+Currently, this folder contains multiple workshops for the following Cloudera Data Services:  
+* **Cloudera Data Warehouse (CDW)**  
+* **Cloudera Data Engineering (CDE)**  
+* **Cloudera DataFlow (CDF)**  
+* **Cloudera AI (CAI)**  
+
+== CDW Workshops
+
+=== Description
+The *Cloudera Data Warehouse (CDW) Workshops* demonstrate how to run **scalable, secure, and high-performance analytics** on enterprise datasets.  
+
+Key learning outcomes include:
+- Creating and managing virtual warehouses for analytical workloads.  
+- Running complex SQL queries on large-scale datasets.  
+- Integrating CDW with BI/Visualization tools.  
+- Leveraging auto-scaling and cost-optimization features.  
+
+== CDE Workshops
+
+=== Description
+The *Cloudera Data Engineering (CDE) Workshops* focus on building and orchestrating **data pipelines at scale**.  
+
+Key learning outcomes include:
+- Authoring and scheduling Spark jobs in a production environment.  
+- Building repeatable data engineering pipelines.  
+- Using Airflow for workflow orchestration with CDE.  
+- Ensuring pipeline reliability and resource optimization.  
+
+== CDF Workshops
+
+=== Description
+The *Cloudera DataFlow (CDF) Workshops* provide hands-on experience with **real-time data ingestion and processing**.  
+
+Key learning outcomes include:
+- Building streaming pipelines with Apache NiFi.  
+- Connecting to multiple sources such as Kafka, cloud storage, and databases.  
+- Performing data transformation and routing in real time.  
+- Managing scalability and monitoring data flows.  
+
+== CAI Workshops
+
+=== Description
+The *Cloudera AI (CAI) Workshops* provide hands-on exercises for building and deploying **AI/ML solutions** on the Cloudera platform.  
+
+Key learning outcomes include:
+- Developing ML models using Python and popular frameworks.  
+- Managing ML lifecycle from training to deployment.  
+- Integrating CAI with CDW, CDE, and CDF for end-to-end workflows.  
+- Leveraging secure and governed environments for enterprise AI.  
+
+---
+
+[NOTE]
+====
+**Copyright Notice**  
+All material is Copyright (c) 2020-2025 Cloudera, Inc. unless stated otherwise.
+====
+

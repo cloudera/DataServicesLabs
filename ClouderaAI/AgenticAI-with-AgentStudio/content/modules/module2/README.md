@@ -12,8 +12,22 @@ With now a greater appreciation of the complexities in designing Agents by hand,
 
 ## Requirements
 
-- [ ]  Access to the Lab Tenant set up
-- [ ]  Agent Studio is already installed in the assigned Cloudera AI project
+- [ ]  Access to the Lab Tenant is already set up.
+- [ ]  Agent Studio is already installed in the assigned Cloudera AI project.
+- [ ]  OpenAi api key is already setup in the assigned Cloudera AI project.
+- [ ]  OpenAQ api key needs to be setup to get AQI and temparature data.
+
+## OpenAQ API Access Setup
+
+* Create an Account in Open Air quality Website  at [https://explore.openaq.org/register](https://explore.openaq.org/register).
+
+![Register OpenAQ Account](./openaq_register.png)
+
+* Now Login to the OpenAQ account and generate API Key in account settings.
+
+![Create OpenAQ API Key](./openaq_api_key.png)
+
+* Copy this API key and save it carefully in a notepad. You will need to access it later
 
 ## Labs
 

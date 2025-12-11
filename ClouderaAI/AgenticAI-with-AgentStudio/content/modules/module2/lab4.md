@@ -33,7 +33,7 @@
 
 ![ai_studio_configure_workflow](./ai_studio_configure_workflow.png)
 
-* Enter the API Key you created from the Open AQ website in [Getting Setup for Workshop](../module1/lab1.md) lab. Click `Save & Next`
+* Enter the API Key you created from the Open AQ website in step [OpenAQ API Access Setup](./README.md). Click `Save & Next`
 
 
 * Test the workflow by adding the following text in `user_input` text box below

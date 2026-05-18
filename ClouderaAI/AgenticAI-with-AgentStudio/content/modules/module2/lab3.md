@@ -15,8 +15,8 @@
 * Let us create a List of Tools with the name as follows:
   * Input Parser  `Vish` ( use your name)
 
-!!! NOTE
-    Special characters are not allowed in Tool Name
+> [!NOTE]
+> Special characters are not allowed in the Tool Name.
 
 ![ai_studio_create_tool_template](./ai_studio_create_tool_template.png)
 
@@ -24,18 +24,23 @@
 
 ![ai_studio_edit_tool_file](./ai_studio_edit_tool_file.png)
 
-!!! Danger "IMPORTANT"
-    Branch Name:  “LAB” branch and  Folder Name : “agent_tools_cai_studio” for all the tools. 
+> [!CAUTION]
+> **IMPORTANT**
+>
+> - Use the `LAB` branch for all tools.
+> - Use the `agent_tools_cai_studio` folder for all tools.
 
 * Update the Tool Code : 
     * Goto the Github Location for CAI custom tools [url](https://github.com/SuperEllipse/AirAware/tree/Lab/agent_tools_cai_studio)
     * Copy the input_parser_tool.py code into the tool.py file 
     * Now you go to the location and update the `input_parser_tool.py` code in Cloudera AI `tool.py`file. 
 
-!!! Danger "Important"
-    Note that the folder to use is  `agent_tools_cai_studio`
-    ![ai_studio_update_input_parser_tool](./branch_and_folder_note.png)
-
+> [!CAUTION]
+> **Important**
+>
+> - Ensure that the folder used is `agent_tools_cai_studio`.
+>
+![ai_studio_update_input_parser_tool](./branch_and_folder_note.png)
 
 
 * Refresh and check that the `input_parser_tool.py` is updated. Finally save the tool clicking on the save button below.
@@ -47,22 +52,26 @@
     * Weather Tool
     * Air Quality Analysis Tool ( **Note** : You need to update 2 files here, tool.py and requirements.txt, see note below)
 
-!!! danger "Important"
-    For the Air Quality Analysis Tool, we need some additional packags, so please update the requirements.txt with the packages below
-    ```
-    #UPDATE THE requirements.txt with the below
-    # https://pip.pypa.io/en/stable/reference/requirements-file-format/
-    pydantic
-    boto3==1.38.17
-    pandas==2.2.3
-    ```
-
-
+> [!CAUTION]
+> **Important**
+>
+> For the Air Quality Analysis Tool, additional packages are required.  
+> Please update the `requirements.txt` file with the following packages:
+>
+> ```txt
+> # Update the requirements.txt with the packages below
+> # https://pip.pypa.io/en/stable/reference/requirements-file-format/
+>
+> pydantic
+> boto3==1.38.17
+> pandas==2.2.3
+> ```
   
 
 * Confirm in Tools Catalog if the tools that you have created are listed.
 
 * Now let us go back to our workflow and click on "Edit Workflow"
+
 ![edit_workflow](./edit_workflow.png)
 
 

@@ -47,12 +47,18 @@ infra_region:   us-east-2 # CSP region for infra
 
 owner_email: "<ENTER_VALUE>"           # email address of owner
 
+#Update the below username_prefix as per your keycloak usernames generated e.g. "pdayhol"
+username_prefix: "user"
+
 # Your Cloudera AI API key (known only after workspace is created)
 # Only used in the setup-hol-assets.yml playbook; ignored in other playbooks
 ml_workspace_api_key: "<ENTER_VALUE>"
 
 # Number of Cloudera AI projects to create
 num_projects: 5
+
+# NOTE: Uncomment and set below to use existing CDP Public Cloud Environment
+cdp_env:   "<ENTER_VALUE>" # str; e.g. "pdayhol-cdp-env"
 ```
 
 * To setup the environment and datalake run the command below.

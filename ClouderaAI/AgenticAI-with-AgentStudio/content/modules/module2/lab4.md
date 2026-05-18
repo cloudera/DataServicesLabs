@@ -6,24 +6,26 @@
 
 ## Lab Steps
 * Click on your workflow in edit mode from the home page
+
 ![edit_workflow](./edit_workflow.png)
 * Click on the capability description and add the below text into the text box under Capability guide
 
 ```text {.prompt-block}
-“Air Aware” 워크플로우는 지정된 위치에 대해 특정 날짜 범위 동안의 대기질을 종합적으로 분석하기 위해 설계되었습니다. 이 과정은 여러 전문 에이전트(agent)와 작업들로 구성되어 있으며, 이들이 협력하여 목표를 달성합니다.
-워크플로우는 먼저 각 위치의 바운딩 박스(bounding box) 좌표를 조회하는 것으로 시작되며, 이 좌표를 기반으로 기온, 풍속, 강수량 등 대기질에 영향을 미치는 요소들에 대한 과거 기상 데이터를 수집합니다.
-동시에 OpenAQ로부터 대기질 데이터를 가져오는데, 사용자가 특정 파라미터를 지정한 경우 그 항목에 중점을 둡니다.
+The **“Air Aware”** workflow is designed to perform a comprehensive analysis of air quality for specified locations over a defined date range. The workflow consists of multiple specialized agents and tasks that collaborate to achieve this objective.
 
-이렇게 수집된 데이터는 이후 분석되어,
-- 대기질의 변화 추세
-- 관련 평균값
-- 기상 조건과 대기질 간의 잠재적 상관관계
-등을 파악합니다.
+The workflow begins by retrieving the bounding box coordinates for each specified location. These coordinates are then used to collect historical weather data, including factors that may influence air quality such as temperature, wind speed, and precipitation.
 
-최종적으로 각 위치에 대한 상세 보고서가 생성되며, 이는 해당 기간 동안의 대기질 상황을 요약하고, 주요 발견 사항과 기상 패턴에 따른 의미 있는 관찰 내용을 포함합니다.
+At the same time, air quality data is retrieved from OpenAQ, with a focus on any specific parameters requested by the user.
 
-사용자 입력 예시 : 
-2025년 1월 1일부터 2025년 1월 3일까지 서울의 대기질 보고서를 초미세먼지 2.5 파라미터 중심으로 제공해줄 수 있나요?
+The collected data is then analyzed to identify:
+- Air quality trends
+- Relevant average values
+- Potential correlations between weather conditions and air quality
+
+Finally, a detailed report is generated for each location, summarizing the air quality conditions during the specified period, along with key findings and notable observations related to weather patterns.
+
+Example User Input:
+Can you provide an air quality report for Seoul from January 1, 2025, to January 3, 2025, focusing on the PM2.5 parameter?
 
 ```
 

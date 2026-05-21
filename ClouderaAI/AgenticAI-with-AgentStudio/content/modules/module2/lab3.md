@@ -45,6 +45,8 @@
 
 * Refresh and check that the `input_parser_tool.py` is updated. Finally save the tool clicking on the save button below.
 
+* After updating `tool.py`, close both the file tab and the associated terminal session before updating `tool.py` for other tools to avoid inconsistencies.
+
 ![ai_studio_refresh_input_parser_tool](./ai_studio_refresh_input_parser_tool.png)
 
 * Similarly create the following tool using the same approach update the tool.py to create 3 more tools. Do not forget to add your name.

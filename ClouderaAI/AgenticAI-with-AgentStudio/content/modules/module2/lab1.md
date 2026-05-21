@@ -10,9 +10,6 @@ In this Lab we will use Agent Studio to create the Air quality Investigator Syst
 
 ## Lab Steps
 
-!!! warning "Important"
-    Please ensure you use `aistudio-llm-model` as your LLM when creating agents
-
 * Click on Agent Studio from the AI Studios Menu item on CAI Left Menu. You should see the Landing Page below.
 
 ![agent_studio_ai_studio](./agent_studio_ai_studio.png)

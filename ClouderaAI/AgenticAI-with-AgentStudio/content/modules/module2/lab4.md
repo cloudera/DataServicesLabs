@@ -25,7 +25,7 @@ The collected data is then analyzed to identify:
 Finally, a detailed report is generated for each location, summarizing the air quality conditions during the specified period, along with key findings and notable observations related to weather patterns.
 
 Example User Input:
-Can you provide an air quality report for Seoul from January 1, 2025, to January 3, 2025, focusing on the PM2.5 parameter?
+Can you provide an air quality report for Sydney from January 1, 2025, to January 3, 2025, focusing on the PM2.5 parameter?
 
 ```
 
@@ -41,7 +41,7 @@ Can you provide an air quality report for Seoul from January 1, 2025, to January
 * Test the workflow by adding the following text in `user_input` text box below
 
 ```text {.prompt-block}
-Can you provide an air quality report for Sydney, Australia  between 01.Jan.2025 to 03.Jan.2025 focussing on pm25 parameter?
+Can you provide an air quality report for Sydney, Australia  between 01.January.2025 to 03.January.2025 focussing on pm25 parameter?
 ```
 
 ![ai_studio_test_workflow](./ai_studio_test_workflow.png)

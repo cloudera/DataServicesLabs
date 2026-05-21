@@ -19,7 +19,7 @@ With now a greater appreciation of the complexities in designing Agents by hand,
 
 ## OpenAQ API Access Setup
 
-* Create an Account in Open Air quality Website  at [https://explore.openaq.org/register](https://explore.openaq.org/register).
+* Create an Account in Open Air quality Website  at [https://explore.openaq.org/register](https://explore.openaq.org/register).   While setting the password, you can use a format like `AgenticAI@<usernumber>`, for example: `AgenticAI@13`.
 
 ![Register OpenAQ Account](./openaq_register.png)
 

@@ -1,4 +1,4 @@
-= End-to-End Labs
+= DataServicesLabs
 :toc:
 :toclevels: 3
 :icons: font

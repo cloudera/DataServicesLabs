@@ -17,7 +17,7 @@ Ensure you have all necessary permissions and configurations before proceeding w
 
 * Data Upload
 
-Once the environment and the Keycloak servers are created, upload the data to the object store. This data will be used to create tables during the workshop.
+Once the environment and the Keycloak servers are created, upload the raw csv file to the object store. This will be used to create tables during the workshop.
 
 Before executing workshop steps, first copy `airlines.csv` from link:../data/airlines.csv[Data Directory] to current workshop_bucket and Create Ranger Policy for RAZ-Enabled AWS Environment.
 
@@ -83,5 +83,22 @@ image::./media/Policy1.png[alt="Sample Policy Details Page in AWS Console"]
 image::./media/Policy2.png[alt="Sample Policy Details Page in AWS Console"]
 image::./media/Policy3.png[alt="Sample Policy Details Page in AWS Console"]
 
+=== Modifying the Trino Policy in Ranger
+To modify the Trino Policy to allow access to trino warehouse and allow permission to run queries for the end user, perform the following steps:
+
+. Navigate to the Ranger UI.  
+. Under the `Resource Policies` tab, click `cm_trino`.  
+
+. Search for policy number 116 (all - trinouser), 125 (all - catalog, schema, table, column) and 123 (all - queryid) one by one, click the pencil icon on the right to edit. 
+. In the **Allow Conditions** section, under `Select Groups`, search for and add the CDP group named <workshop_name>-aw-cdp-user-group.
++  
+image::./media/all_trinouser.png[alt="Sample Policy Details Page in Ranger UI",940,420] 
+image::./media/databse_column.png[alt="Sample Policy Details Page in Ranger UI",940,420]
+image::./media/queryid_policy.png[alt="Sample Policy Details Page in Ranger UI",940,420] 
+
+
+. Click `Save` to save the policy.  
+
 == Establishing Connectivity to Data Warehouse from end user machine
 Whitelist the end users IP address against port `443` in `knox_sg` security group to allow connectivity to Data Warehouse from end user machine.
+

@@ -63,8 +63,8 @@ The content follows a codelab structure: each lab states an explicit objective, 
 
 By the end of the workshop you have:
 
-* A partitioned Apache Iceberg table (`iceberg.airline_lab.flights`) populated from a Kaggle airline dataset.
-* Two reusable Python notebooks that query the table with both the native `trino-python-client` driver and with `SQLAlchemy`.
+* A partitioned Apache Iceberg table (`iceberg.airline_lab.flights_<username>`) populated from a Kaggle airline dataset.
+* Four reusable Python notebooks that query the table with both the native `trino-python-client` driver and with `SQLAlchemy`.
 * A set of `.sql` scripts you can run directly from the CDW SQL editor.
 
 === What you learn
@@ -102,7 +102,7 @@ The workshop runs entirely against a managed Trino VW in CDW. Your notebook conn
 |*Storage cost* |Negligible for the sample dataset (<1 MB).
 |===
 
-TIP: If you only have less time, complete Lab 0 and Lab 1 and Lab 2, Labs 3 and Lab 4 can be revisited independently.
+TIP: If you have less time, complete Lab 0 and Lab 1 and Lab 2, Labs 3 and Lab 4 can be revisited independently.
 
 == Lab 0 - Before you begin
 
@@ -134,12 +134,28 @@ Collect the following values. You reference them throughout the workshop.
 |*Schema* |`airline_lab`.
 |===
 
-To find the Trino hostname:
+==== Set workload password:
+ 
+
+. Click on your user name at the top right corner then click on Profile..
++
+image::./images/profile.png[alt="top navigation bar in CDP Console with Profile highlighted"]
+
+. Click option Set Workload Password.
++
+image::./images/set_workloadpwd.png[alt="Set Workload Password option"]
+
+. Enter a password that you can remember. We will require this while connecting to Trino VW.
+. Click the button `Set Workload Password`.
++
+image::./images/provide_pwd.png[alt="Provide Workload Password"]
+
+==== To find the Trino hostname:
 
 . In *Data Warehouse*, locate your Trino VW.
 . Click the three-dot menu on the tile, then *Copy JDBC URL*.
 . The string looks like `jdbc:trino://<host>:443/iceberg`. Copy the `<host>` portion.
-
+ 
 ++++
 <p align="center">
   <img width="760" height="380" src="images/cdw_copy_jdbc_url.png" alt="CDW Virtual Warehouses page with the three-dot menu open and Copy JDBC URL highlighted">
@@ -223,7 +239,7 @@ The dataset is staged as a CSV on cloud object storage, read through the Hive ca
 
 Upload the CSV to object storage that your CDW environment can read. Substitute the bucket or container name for your environment.
 
-NOTE: Data is already loaded in the bucket for this lab using below command.
+NOTE: The raw CSV is already staged in S3 in the bucket for this lab using below command.
 
 [source,bash]
 ----
@@ -249,11 +265,11 @@ Open `notebooks/01_data_setup.ipynb` and run the cells top-to-bottom. The notebo
 . Registers an *external* staging table `hive.airline_lab.flights_raw` over the CSV you uploaded.
 . Creates the *managed* Iceberg target table `iceberg.airline_lab.flights`, partitioned by `year(departure_date)` and `airport_continent`.
 
-The same DDL is also available in `scripts/01_ddl.sql` if you prefer to run it directly from the Cloudera Data Explorer.
+The same DDL is also available in `scripts/01_ddl.sql` if you prefer to run it directly from the Cloudera Data Explorer. Run each step one at a time, confirming success before moving on.
 
 === Step 3 : Load data with Trino
 
-Run the final cell of the notebook (or `scripts/02_insert.sql`). The `INSERT INTO ... SELECT` copies and type-casts every row from the staging table into the Iceberg table. Iceberg produces columnar Parquet files grouped by the declared partitioning transforms.
+Run the final cell of the notebook (`notebooks/01_data_setup.ipynb`) (or run `scripts/02_insert.sql`). The `INSERT INTO ... SELECT` copies and type-casts every row from the staging table into the Iceberg table. Iceberg produces columnar Parquet files grouped by the declared partitioning transforms.
 
 === Verify Lab 1
 
@@ -261,8 +277,8 @@ Run the following query from Jupyter or the Cloudera Data Explorer. You should s
 
 [source,sql]
 ----
-SELECT COUNT(*)            AS total_flights     FROM iceberg.airline_lab.flights;
-SELECT flight_status, COUNT(*) AS cnt           FROM iceberg.airline_lab.flights GROUP BY flight_status;
+SELECT COUNT(*)            AS total_flights     FROM iceberg.airline_lab.flights_${username};
+SELECT flight_status, COUNT(*) AS cnt           FROM iceberg.airline_lab.flights_${username} GROUP BY flight_status;
 ----
 
 If the first query returns zero, re-check the `external_location` value in the DDL and the path you uploaded to. See link:#troubleshooting[Troubleshooting].
@@ -327,6 +343,8 @@ Run `ANALYZE TABLE iceberg.airline_lab.flights` after any large load, and `SHOW 
 
 Running the `EXPLAIN ANALYZE` cell should show non-zero CPU time and actual row counts per stage. If every `actualRowCount` is `0`, the predicate is filtering out all data; loosen the date range.
 
+NOTE: The same DDL is also available in `scripts/03_queries.sql` which covers lab2 and lab3. if you prefer to run it directly from the Cloudera Data Explorer. Run each step one at a time, confirming success before moving on.
+
 == Lab 4 - Cloudera Specifics
 
 Open `notebooks/04_cloudera_specifics.ipynb` to execute this lab.
@@ -360,6 +378,8 @@ If a query returns `Access Denied: Cannot select from table ...`, request a Rang
   <img width="760" height="440" src="images/ranger_policy_example.png" alt="Ranger Edit Policy view granting SELECT on iceberg.airline_lab.flights to the workshop_user with a first_name hash masking rule">
 </p>
 ++++
+
+NOTE: The same DDL is also available in scripts/04_lab.sql which covers lab4. If you prefer to run it directly from the Cloudera Data Explorer. Run each step one at a time by updating placeholder values, confirming success before moving on.
 
 == Clean up
 

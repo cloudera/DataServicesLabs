@@ -8,13 +8,13 @@
 
 -- 1. Create the lab schema in both catalogs.
 CREATE SCHEMA IF NOT EXISTS hive.airline_lab
-WITH (location = 's3a://<your-bucket>/airline_lab/');
+WITH (location = 's3a://${bucket_name}/airline_lab/');
 
 CREATE SCHEMA IF NOT EXISTS iceberg.airline_lab;
 
 -- 2. External staging table over the raw CSV file uploaded in Lab 1 Step 1.
---    Update the external_location to match where you placed airlines.csv.
-CREATE TABLE IF NOT EXISTS hive.airline_lab.flights_raw (
+--    Update the external_location to match where you placed airlines.csv and Update the placehoder <username> to your username..
+CREATE TABLE IF NOT EXISTS hive.airline_lab.flights_raw_<username> (
     passenger_id          VARCHAR,
     first_name            VARCHAR,
     last_name             VARCHAR,
@@ -33,13 +33,14 @@ CREATE TABLE IF NOT EXISTS hive.airline_lab.flights_raw (
 )
 WITH (
     format = 'CSV',
-    external_location = 's3a://<your-bucket>/airline_lab/raw/',
+    external_location = 's3a://${bucket_name}/airline_lab/raw/',
     skip_header_line_count = 1
 );
 
 -- 3. Managed Iceberg target table.
+-- Update the placehoder <username> to your username. 
 --    Partitioned by departure_year (hidden via Iceberg transforms).
-CREATE TABLE IF NOT EXISTS iceberg.airline_lab.flights (
+CREATE TABLE IF NOT EXISTS iceberg.airline_lab.flights__<username> (
     passenger_id          VARCHAR,
     first_name            VARCHAR,
     last_name             VARCHAR,

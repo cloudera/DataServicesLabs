@@ -1,8 +1,9 @@
 -- =============================================================
 -- Lab 1 - DML: load the staging CSV into the Iceberg target table
+-- Update the placehoder <username> to your username.
+-- Only inserts if the target table is currently empty
 -- =============================================================
-
-INSERT INTO iceberg.airline_lab.flights
+INSERT INTO iceberg.airline_lab.flights_<username>
 SELECT
     passenger_id,
     first_name,
@@ -19,10 +20,7 @@ SELECT
     arrival_airport,
     pilot_name,
     flight_status
-FROM hive.airline_lab.flights_raw;
-
--- Sanity checks after the load.
-SELECT COUNT(*)                  AS total_flights       FROM iceberg.airline_lab.flights;
-SELECT flight_status, COUNT(*)   AS cnt                 FROM iceberg.airline_lab.flights GROUP BY flight_status;
-SELECT MIN(departure_date)       AS earliest,
-       MAX(departure_date)       AS latest              FROM iceberg.airline_lab.flights;
+FROM hive.airline_lab.flights_raw_<username>
+WHERE NOT EXISTS (
+    SELECT 1 FROM iceberg.airline_lab.flights_<username>
+);

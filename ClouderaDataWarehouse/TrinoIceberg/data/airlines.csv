@@ -1,0 +1,51 @@
+passenger_id,first_name,last_name,gender,age,nationality,airport_name,airport_country_code,country_name,airport_continent,continents,departure_date,arrival_airport,pilot_name,flight_status
+ABVWIg,Edithe,Leggis,Female,62,Japan,Coldfoot Airport,US,United States,NAM,North America,2022-06-28,CXF,Fransisco Hardes,On Time
+jkXXAX,Elwood,Catt,Male,62,Nicaragua,Kugluktuk Airport,CA,Canada,NAM,North America,2022-12-26,YCO,Jaine Dudden,On Time
+CdUz2g,Darby,Felgate,Male,67,Russia,Grenoble-Isère Airport,FR,France,EU,Europe,2022-01-18,GNB,Carroll Hefner,On Time
+BRS38V,Dominica,Pyle,Female,71,China,Ottawa / Gatineau Airport,CA,Canada,NAM,North America,2022-09-16,YND,Ileana Dottridge,Delayed
+9kvTLo,Bay,Pencost,Male,21,China,Gillespie Field,US,United States,NAM,North America,2022-02-25,SEE,Renell Gibbons,On Time
+Vb8cqW,Tripp,Dockwra,Male,26,Saudi Arabia,Vermilion Airport,CA,Canada,NAM,North America,2022-11-13,YVG,Theadora Napper,Delayed
+pXEXWp,Lucy,Hinzer,Female,8,Kazakhstan,Prince Rupert Airport,CA,Canada,NAM,North America,2022-11-25,YPR,Jarrod Bauers,On Time
+k5nV87,Ivory,Tewkesbury,Male,66,China,Abu Dhabi International Airport,AE,United Arab Emirates,AS,Asia,2022-09-23,AUH,Philippe Feltham,On Time
+nlHBA9,Thaddeus,Watts,Male,60,Japan,Port Elizabeth International Airport,ZA,South Africa,AF,Africa,2022-03-04,PLZ,Matias Paulitz,On Time
+03fWz4,Jennette,Rawet,Female,59,Madagascar,Dhangadhi Airport,NP,Nepal,AS,Asia,2022-09-14,DHI,Jeffrey Matignon,On Time
+RGgHF1,Reina,Glentworth,Female,11,Palestinian Territory,Cheongju International Airport,KR,South Korea,AS,Asia,2022-04-21,CJJ,Ricky Roylance,On Time
+B1y25r,Leonelle,Belasyse,Female,33,Trinidad and Tobago,Tezu Airport,IN,India,AS,Asia,2022-05-29,TEI,Lane Brayfield,On Time
+UgjNqn,Ange,Andreev,Male,44,Peru,Kangaatsiaq Heliport,GL,Greenland,NAM,North America,2022-10-19,QPW,Guido Lardner,On Time
+M2vMcS,Kathryne,Goodwyn,Female,12,China,Antonio Roldán Betancourt Airport,CO,Colombia,SAM,South America,2022-03-07,APO,Jodi Warnes,On Time
+AIfQlP,Clarette,Saterthwaite,Female,19,Ukraine,Mo i Rana Airport Røssvoll,NO,Norway,EU,Europe,2022-06-10,MQN,Derrek Scroyton,On Time
+ZSqcyG,Skelly,Saenz,Male,60,Portugal,Amsterdam Airport Schiphol,NL,Netherlands,EU,Europe,2022-02-09,AMS,Wait Olorenshaw,Cancelled
+mUr9qM,Saree,Tailour,Female,1,Mongolia,Gimpo International Airport,KR,South Korea,AS,Asia,2022-09-28,GMP,Hercule Jellis,On Time
+wDO0pg,Lynnett,Ziolkowska,Female,5,Kenya,Kalispell City Airport,US,United States,NAM,North America,2022-08-03,S27,Nertie Izod,Cancelled
+WtQIby,Cece,Cramb,Female,81,France,Abraão Airport,BR,Brazil,SAM,South America,2022-02-16,IRZ,Rodney Gillivrie,On Time
+tdMKEQ,Angela,Blackborne,Female,74,Philippines,Itaituba Airport,BR,Brazil,SAM,South America,2022-08-15,ITB,Phillida Wigley,On Time
+Tq0Yr7,Darn,Swendell,Male,28,Poland,Chabahar Konarak Airport,IR,Iran,AS,Asia,2022-06-01,ZBR,Fred Tuny,On Time
+zQx26K,Gypsy,Mitkov,Female,42,China,Moala Airport,FJ,Fiji,OC,Oceania,2022-10-21,MFJ,Emelda Sieb,On Time
+65Asvp,Guido,Abery,Male,21,France,Rio de Janeiro/Galeão International Airport,BR,Brazil,SAM,South America,2022-06-14,GIG,Florian Esplin,On Time
+WUtnTb,Stefa,Danelut,Female,49,Sweden,Port Hardy Airport,CA,Canada,NAM,North America,2022-12-02,YZT,Olenolin Grafom,On Time
+3JTZTg,Frazier,Rackley,Male,52,Japan,El Bagre Airport,CO,Colombia,SAM,South America,2022-08-04,EBG,Erinn Mullally,On Time
+kRZgTR,Rolph,Marmon,Male,27,Indonesia,Taltheilei Narrows Airport,CA,Canada,NAM,North America,2022-01-23,TTN,Sinclare Blessed,On Time
+I1NmYt,Derek,Ethelston,Male,57,United States,Oostende-Brugge International Airport,BE,Belgium,EU,Europe,2022-09-05,OST,Diena Cartmel,On Time
+D0RzKs,Cortie,Rousel,Male,69,Malaysia,Ponta Porã Airport,BR,Brazil,SAM,South America,2022-05-25,PMG,Davida Plaschke,On Time
+QbcCbn,Katine,Shortcliffe,Female,31,Russia,Amsterdam Airport Schiphol,NL,Netherlands,EU,Europe,2022-01-18,AMS,Flory Longega,On Time
+E6VqIk,Cleveland,Eliesco,Male,77,Indonesia,Asturias Airport,ES,Spain,EU,Europe,2022-12-17,OVD,Merwin Hunnable,On Time
+o3YLv4,Sonnie,Leeb,Male,3,Russia,Saravena Los Colonizadores Airport,CO,Colombia,SAM,South America,2022-09-19,RVE,Niki Fosten,On Time
+gbsR5F,Malachi,Aulsebrook,Male,20,Portugal,Merauke Mopah Airport,ID,Indonesia,AS,Asia,2022-07-29,MKQ,Wallis Leverich,On Time
+0B3klS,Cross,Blaise,Male,55,China,Jackson Hole Airport,US,United States,NAM,North America,2022-07-06,JAC,Lee Skarr,Delayed
+Y3O5aT,Reba,Waxman,Female,29,Philippines,Chipata Airport,ZM,Zambia,AF,Africa,2022-05-11,CIP,Ivy Tamlett,On Time
+I5C3ON,Delora,Petrasek,Female,45,Thailand,Gurney Airport,PG,Papua New Guinea,OC,Oceania,2022-12-27,GUR,Bernie Polo,On Time
+Zy7mbg,Irwinn,Tommaseo,Male,16,Sweden,Tambolaka Airport,ID,Indonesia,AS,Asia,2022-10-17,TMC,Brewer Jannetta,On Time
+sJQ8Ov,Thibaut,Gorsse,Male,50,Russia,Iksan Airport,KR,South Korea,AS,Asia,2022-11-27,JFR,Hakim Siegertsz,On Time
+tsx7o5,Shaughn,Foran,Male,73,France,Springdale Municipal Airport,US,United States,NAM,North America,2022-04-24,ASG,Felecia Giampietro,On Time
+cZ3WMA,Harriett,Gruszka,Female,61,China,Stronsay Airport,GB,United Kingdom,EU,Europe,2022-02-03,SOY,Rhianna Farnes,On Time
+PqnqXk,Kylie,Ronnay,Female,61,Honduras,Kazan International Airport,RU,Russia,EU,Europe,2022-08-13,KZN,Dulsea Dmych,Delayed
+mqGsKg,Thor,Lambourne,Male,58,Russia,Narvik Framnes Airport,NO,Norway,EU,Europe,2022-03-03,NVK,Hilario Mussilli,Delayed
+9y5XiG,Morie,Andrioletti,Male,25,Indonesia,Reims-Champagne Air Base,FR,France,EU,Europe,2022-10-06,RHE,Merrily Yurkov,Cancelled
+uy0VG1,Fonzie,Sprigin,Male,14,Portugal,Pinsk South-West Airport,BY,Belarus,EU,Europe,2022-06-24,PNQ,Dolli Jannasch,On Time
+r62nmX,Ashely,Bullock,Female,73,Portugal,Richmond National Airport,US,United States,NAM,North America,2022-05-28,RIC,Waldo Martensen,On Time
+OYa07v,Garik,Bachanski,Male,39,Indonesia,Ambanja Airport,MG,Madagascar,AF,Africa,2022-10-29,IVA,Kare Tong,On Time
+BV6MEc,Trey,Gosnay,Male,7,Indonesia,Amsterdam Airport Schiphol,NL,Netherlands,EU,Europe,2022-03-19,AMS,Saunder Tatchell,On Time
+aHwPcV,Perren,Wilman,Male,34,Brazil,Ile des Pins Airport,NC,New Caledonia,OC,Oceania,2022-09-02,ILP,Nikolaus Adelman,On Time
+hsM8tH,Ame,Cleugher,Male,72,China,Nampula Airport,MZ,Mozambique,AF,Africa,2022-05-18,APL,Wileen Cohane,On Time
+OxwgDz,Dedra,Muzzollo,Female,29,Sweden,Hokkaido Hakodate Airport,JP,Japan,AS,Asia,2022-06-14,HKD,Marita Eronie,On Time
+d0ejaa,Hale,Zellmer,Male,54,China,Abilene Regional Airport,US,United States,NAM,North America,2022-07-11,ABI,Kara-lynn Bumstead,On Time

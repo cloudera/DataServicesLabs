@@ -202,21 +202,21 @@ ____
 * Click on your user name (Ex: immiapac00@workshop.com) at the lower left corner.
 * Click on Profile.
 
-image:../../CDF/Guide/media/media/image153.png[media/media/image153,width=596,height=349]
+image:media/media/image153.png[media/media/image153,width=596,height=349]
 ____
 * {blank}
 +
 ____
 * Click option *Set Workload Password*.
 
-image:../../CDF/Guide/media/media/image151.png[media/media/image151,width=514,height=209]
+image:media/media/image151.png[media/media/image151,width=514,height=209]
 ____
 * {blank}
 +
 ____
 * Enter a password that you can remember. We will require this throughout our labs
 
-image:../../CDF/Guide/media/media/image41.png[media/media/image41,width=545,height=239]
+image:media/media/image41.png[media/media/image41,width=545,height=239]
 
 * Click the button Set Workload Password.
 ____
